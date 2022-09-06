@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<title>Aula cap 17</title>
+
+	<style type="text/css">
+
+		*{
+			line-height: 1.5em;
+		}
+
+		:root {
+			--cor0:  #c5ebd6;
+			--cor1:  #83E1AD;
+			--cor2:  #3DDC84;
+			--cor3:  #2FA866;
+			--cor4:  #1A5C37;
+			--cor5:  #063D1e;
+			--fonte0: Arial, Helvetica, sans-serif;
+			--fonte1: 'Bebas Neue', cursive;
+			--fonre2:  'Android', sans-serif;			
+		}
+
+		body {
+			font-family: var(--fonte0);
+			color: var(--cor0);
+			background-color: var(--cor1);
+		}
+
+		main {
+			min-width: 400px;
+			max-height: 800px;
+			border: 1px solid black;
+			background-color: white;
+		}
+		header {
+			border: 1px solid black;
+			background-image: linear-gradient(to top, var(--cor0),var(--cor5));
+			color: white;
+			text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.466);
+		}
+		nav {
+			border: 1px solid black;
+			text-shadow: 0px 0px 0px rgba(0, 0, 0, 0); <!--cancelar a do header-->
+		}
+		article {
+			border: 1px solid black;
+		}
+
+		div.video {
+			position: relative;
+			background-color: var(--cor4);
+			height: 0px;
+			margin-left: -20px;
+			margin-right: -20px;
+			margin-bottom: 15px;
+			padding-bottom: 59%;
+		}
+		div.video > iframe {
+			position: absolute;
+			top: 5%;
+			left: 5%;
+			width: 90%;
+			height: 90%;
+		}
+
+		aside {
+			border: 1px solid black;
+		}
+
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>CURIOSIDADES DE TECNOLOGIA</h1>
+		<p>Tudo aquilo que você sempre quis saber sobre o mundo<br>Tech, em um único lugar.</p>
+	</header>
+	<nav>
+		<a href="#">Home</a>
+		<a href="#">Notícias</a>
+		<a href="#">Curiosidades</a>
+		<a href="#">Fale Conosco</a>
+	</nav>
+	<main>
+		<article>
+			<h1>HISTORIA DO MASCOTE DO ANDROID</h1>
+			<p>
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+			</p>
+			<h2>A PRIMEIRA VERSÃO</h2>
+			<p>
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+			</p>
+			<aside>
+				<h1>Meu Aside</h1>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+				</p>
+				<div class="video">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/l2UDgpLz20M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>			
+				</div>
+			</aside>
+		</article>
+	</main>
+	<footer>
+		<p>Produzido por <em>Curso em video</em></p>
+		<p><button><a href="../../index.html">MENU</a></button></p>
+	</footer>
+</body>
+</html>

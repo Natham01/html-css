@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+	<title>Aula cap 00</title>
+	<link rel="stylesheet" type="text/css" href="meustilo.css">
+</head>
+<body>
+	<main>
+	<div id="header">
+		<h1 id="principal">Pagina de Aulas do CURSO EM VIDEO!</h1>
+		<picture>
+				<img id="foto_logo" src="imagens/curso.png" alt="Foto">
+		</picture>
+	</div>
+	<h1>Usando Listas!</h1>
+	<h2>Trabalhando com Listas Ordenadas e não Ordenadas</h2>
+	<ol type="I">
+			<li>Acesse o Capitulo 13 - <a href="exercicios/ex13/cor03.html" target="_self" rel="next">Falando sobre CORES e CSS</a></li>
+			<li>Acesse o Capitulo 14 - <a href="exercicios/ex14/alinhamento.html" target="_self" rel="next">Falando sobre Alinhamentos</a></li>
+				<ul>
+					<li><a href="exercicios/ex14/ex14_1.html" target="_self" rel="next">Acesse o Exercicio 1</a></li>
+				</ul>
+			<li>Acesse o Capitulo 16 - <a href="exercicios/ex16/ex16_1.html" target="_self" rel="next">Falando sobre Modelo de caixa.</a></li>
+				<ul>
+					<li><a href="exercicios/ex16/ex16_2.html" target="_self" rel="next">Acesse o Exercicio 1 - Site bolado</a></li>
+				</ul>
+			<li>Acesse o Capitulo 17 - <a href="exercicios/ex17/site.html" target="_self" rel="next">Site Completo</a></li>
+			<li>Acesse o Capitulo 17 - <a href="Desafio05/desafiocap17/android.html" target="_self" rel="next">Site Completo Guanabara</a></li>
+	</ol>
+	<ul type="square">
+		<li>Sem Ordem</li>
+		<li>Sem Ordem</li>
+	</ul>
+	<h1>Usando Links!</h1>
+	<p>Aqui você pode ir até um <a href="https://google.com.br" target="_blank" rel="external">link.</a> Nesse exemplo o <abbr title="Sistema de Busca">Google</abbr></p>
+	<p>Acessar a PAGINA de VIDEOS clicando <a href="pagina02.html" rel="next">aqui</a></p>
+	<p>Acessar pagina de NOTICIAS clicando <a href="noticias/paginanoticias.html" target="_selft" rel="next">aqui</a></p>
+	<p>Acessar nosso PDF clicando <a href="nossopdf.zip" donwload="midia/nossopdf.zip" type="aplication/zip">aqui.</a></p>
+
+		
+	<h1>Usando Audio/Imagens!</h1>
+	<p><audio src="midia/audio.mp3" controls></audio></p>
+	<p>
+		<audio preload="metadata" controls loop>
+			<source src="midia/aaudio.mp3" type="audio/mpeg">
+			<source src="midia/audio.ogg" type="audio/mpeg">
+			<source src="midia/audio.wav" type="audio/mpeg">
+			<p>Não foi possivel carregar, <a href="midia/audio.mp3" download="audio.mp3" type="audio/mpeg">baixe aqui</a></p>
+		</audio>
+	</p>
+	<p>
+		<picture>
+			<source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+			<source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+			<img src="imagens/foto-g.png" alt="Foto">
+		</picture>
+	</p>
+		<video width="500" poster="imagens/capa_video.png" controls>
+			<source src="midia/video1.mp4" type="video/mp4">
+			<source src="midia/video1.m4v" type="video/m4v">
+		</video>
+	</p>
+</main>
+</body>
+</html>
