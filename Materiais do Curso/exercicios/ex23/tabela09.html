@@ -25,12 +25,31 @@
 			font-size: 1.3em;
 		}
 
+		.carea {
+			background-color: gray;
+		}
+		.cdisc {
+			background-color: yellow;
+		}
+		.cnotas{
+			background-color: purple;
+		}
+		.cmedia {
+			background-color: red;
+		}
+
 	</style>
 </head>
 
 <body>
-	<h1>Uso de tabelas - Desafio 14</h1>
+	<h1>Uso de tabelas - COLGROUP</h1>
 	<table>
+		<colgroup>
+			<col class="carea">
+			<col class="cdisc">
+			<col class="cnotas" span="2">
+			<col class="cmedia">
+		</colgroup>
 		<thead>
 			<tr>
 				<th rowspan="2" scope="col">Area</th>
@@ -68,27 +87,6 @@
 				<td>10</td>
 				<td>10</td>
 				<td>10</td>
-			</tr>
-			<tr>
-				<th colspan="4">Méria de Exatas</th>
-				<td><strong>8,0</strong></td>
-			</tr>
-			<tr>
-				<th rowspan="2">Humanas</th>
-				<td>Historia</td>
-				<td>5</td>
-				<td>8</td>
-				<td>6,5</td>
-			</tr>
-			<tr>
-				<td>Geografia</td>
-				<td>7</td>
-				<td>7</td>
-				<td>7,0</td>
-			</tr>
-			<tr>
-				<th colspan="4">Média de Humandas</th>
-				<td><strong>6,75</strong></td>
 			</tr>
 		</tbody>
 	</table>
