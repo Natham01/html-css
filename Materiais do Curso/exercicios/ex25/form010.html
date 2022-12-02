@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Aula Formularios</title>
+	<style type="text/css">
+
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Meu Dessimo formulario</h1>
+	<form action="cadastro.php" method="get" autocomplete="on">
+		
+		<p>
+			<label for="inasc">Em que ano você NASCEU? </label>
+			<br>
+			<input type="number" id="inasc" name="nasc" max="2022" oninput="calcIdade()">
+		</p>
+
+		<p>
+			<label for="iidade">Sua ideda é: </label>
+			<output id="iidade">0</output>
+		</p>
+
+		<input type="submit" value="Enviar">
+	</form>
+
+	<script>
+		
+		function calcIdade() {
+			let atual = new Date().getFullYear()
+			iidade.innerHTML = Number(atual) - Number(inasc.value)
+		}
+
+	</script>
+
+</body>
+</html>
